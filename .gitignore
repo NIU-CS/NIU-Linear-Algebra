@@ -2,3 +2,6 @@
 *.DS_Store
 .venv/
 __pycache__/
+tex/*.log
+tex/*.pdf
+tex/*.aux

@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Chapter 1.5 - Exercise Solutions}
+\author{Fay Huang \\ NIU Department of CSIE}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{1. Find an elementary matrix $F$ that satisfies the stated equation.}
+
+\[
+F = \begin{bmatrix}
+8 & 1 & 5 \\
+8 & 1 & 1 \\
+3 & 4 & 1
+\end{bmatrix}
+\]
+
+\noindent $F$ was obtained from $B$ by adding 2 times the third row to the second row.
+
+\section*{2. Find the inverse of the $4 \times 4$ matrix, where $k_1, k_2, k_3, k_4$ are all nonzero.}
+
+The identity matrix was adjoined to the given matrix.
+
+\begin{itemize}
+  \item The first and fourth rows were interchanged.
+  \item The second and third rows were interchanged.
+  \item The rows were scaled respectively by $\frac{1}{k_1}, \frac{1}{k_2}, \frac{1}{k_3}, \frac{1}{k_4}$.
+\end{itemize}
+
+\noindent The inverse is a diagonal matrix with entries $\frac{1}{k_i}$ on the diagonal, after proper row swaps.
+
+\section*{3. Suggested Exercises}
+
+\begin{enumerate}
+  \item Find a row operation and the corresponding elementary matrix that will restore the given elementary matrix to the identity matrix.
+
+  \[
+  \text{(a)} \quad
+  \begin{bmatrix}
+  1 & 0 & 0 \\
+  9 & 1 & 0 \\
+  -5 & 0 & 1
+  \end{bmatrix}
+  \]
+
+  Add 5 times the first row to the third row.
+
+  \item Find an elementary matrix $E$ such that $EB = A$.
+
+  \item Use the inversion algorithm to find the inverse of the matrix (if the inverse exists).
+
+  \[
+  A = \begin{bmatrix}
+  1 & 2 & 3 \\
+  2 & 5 & 3 \\
+  1 & 0 & 8
+  \end{bmatrix}
+  \]
+
+  The inverse is:
+
+  \[
+  A^{-1} = \frac{1}{-40}
+  \begin{bmatrix}
+  13 & -5 & ? \\
+  ? & ? & ? \\
+  ? & ? & ?
+  \end{bmatrix}
+  \]
+  \textit{(Incomplete in original image)}
+\end{enumerate}
+
+\section*{4. Find all values of $c$, if any, for which the given matrix is invertible.}
+
+\[
+\begin{bmatrix}
+1 & 0 \\
+c & 1 \\
+1 & c
+\end{bmatrix}
+\]
+
+Apply row operations and check for linear dependence.
+
+\section*{5. Express the matrix and its inverse as products of elementary matrices.}
+
+\section*{6. Show that a given matrix is not invertible for any values of the entries.}
+
+\end{document}
